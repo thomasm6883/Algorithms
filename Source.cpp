@@ -145,6 +145,7 @@ bool checkEqual() {
 	return equal;
 }
 
+//compare ALL permutations between the two graphs
 bool comparePermutations(int s, int e) {
 
 	for (int i = 1; i < e; i++) {
@@ -180,7 +181,7 @@ bool comparePermutations(int s, int e) {
 
 
 
-//compare the two adjacency matrices to detect isomporphism
+//compare the two adjacency matrices to detect isomorphism
 void compareLists() {
 	//compare vertices
 	if (compareV()) {
@@ -210,6 +211,7 @@ void compareLists() {
 
 }
 
+//Run functions
 int main () {
 	readFiles();
 	compareLists();
